@@ -1,0 +1,15 @@
+#!/bin/bash
+filename="file.txt"
+
+name=""
+age=""
+
+while read -r line
+do
+    IFS=' ' read -ra token <<< "$line"
+    name="$name ${token[0]}"
+    age="$age ${token[1]}"
+done < $filename
+
+printf "$name" | cut -c 2-
+printf "$age" | cut -c 2-
