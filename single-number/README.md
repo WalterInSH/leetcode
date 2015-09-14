@@ -21,7 +21,7 @@ var singleNumber = function(nums) {
 };
 ```
 
-It gives the right answer. But it's not the best solution. Because it doesn't a linear runtime complexity.
+It gives the right answer. But it's not the best solution. Because it doesn't have a linear runtime complexity.
 
 ###Hint:
 
